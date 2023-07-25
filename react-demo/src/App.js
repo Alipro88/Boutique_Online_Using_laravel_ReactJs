@@ -12,6 +12,7 @@ import Register from './register';
 import EditArticle from './updateArticles';
 import CreateArticle from './addArticles';
 import { useState } from 'react';
+import Newlogin from './Newlogin';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
   return (
 
     <div>
-    <Header />
+    
 
       <BrowserRouter>
         <Routes> 
@@ -32,13 +33,22 @@ function App() {
           <Route path="/blog" element = {<Component/>} />
           <Route path="/add" element ={<CreateArticle/>} />
           <Route path="/edit-article/:id" element ={<EditArticle/>} />
+          <Route path="/login" element ={<Newlogin/>} />
+          
           
         </Routes>
       </BrowserRouter>
 
-    <Footer />  
+
+    
+
+        
       
     </div>
+    
+
+    
+    
 
       
       
